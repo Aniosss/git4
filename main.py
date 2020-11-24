@@ -7,7 +7,7 @@ from PyQt5.QtWidgets import QMainWindow, QApplication, QTableWidgetItem
 class Program(QMainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi('untitled.ui', self)
+        uic.loadUi('main.ui', self)
         self.tableWidget.setColumnCount(7)
         self.tableWidget.setRowCount(0)
         self.connection = sqlite3.connect("coffee.sqlite")
